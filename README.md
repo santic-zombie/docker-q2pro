@@ -1,5 +1,5 @@
 # docker-q2pro
-Dockerfile for build q2proded container
+Dockerfile to build q2proded container
 
 How build:
 ```
