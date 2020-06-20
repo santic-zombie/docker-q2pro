@@ -2,8 +2,9 @@ FROM debian:latest as builder
 MAINTAINER Santic <admin@santic-zombie.ru>
 
 RUN apt-get update && apt-get install -y git libcurl4-gnutls-dev \
-    build-essential libsdl2-dev zlib1g-dev && \
-    git clone https://github.com/skullernet/q2pro && \
+    build-essential libsdl2-dev zlib1g-dev
+    
+RUN git clone https://github.com/skullernet/q2pro && \
     git clone https://github.com/skullernet/openffa && \
     git clone https://github.com/skullernet/opentdm
 
